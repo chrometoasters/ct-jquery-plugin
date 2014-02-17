@@ -2,6 +2,10 @@
 
 A best-practice template for developing jQuery plugins.
 
+## Installation
+
+    bower install https://github.com/chrometoasters/frontend-boilerplate-jquery-plugin.git
+
 ## Usage
 
 1. Decide on a plugin name, considering the function or utility that the plugin will provide.
