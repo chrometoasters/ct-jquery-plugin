@@ -1,0 +1,13 @@
+{
+  "name": "frontend-boilerplate-jquery-plugin",
+  "description": "jQuery Plugin template",
+  "version": "1.0.0",
+  "author": "Dan Smith (dan.smith@chrometoaster.com)",
+  "homepage": "http://github.com/chrometoasters/frontend-boilerplate-jquery-plugin",
+  "bugs": "https://github.com/chrometoasters/frontend-boilerplate-jquery-plugin/issues",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/chrometoasters/frontend-boilerplate-jquery-plugin/tree/master"
+  },
+  "devDependencies": {}
+}
