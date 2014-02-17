@@ -1,8 +1,26 @@
 {
     "name": "frontend-boilerplate-jquery-plugin",
+    "description": "A best-practice jQuery Plugin template",
     "version": "1.0.0",
     "main": "dist",
+    "license": "",
+    "ignore": [],
+    "keywords": [],
+    "authors": [
+        {
+            "name": "Dan Smith",
+            "email": "dan.smith@chrometoaster.com"
+        }
+    ],
+    "homepage": "http://github.com/chrometoasters/frontend-boilerplate-jquery-plugin",
+    "repository": {
+        "type": "github",
+        "url": "https://github.com/chrometoasters/frontend-boilerplate-jquery-plugin/tree/master"
+    },
     "dependencies": {
         "jquery": "latest"
-    }
+    },
+    "devDependencies": {},
+    "resolutions": {},
+    "private": true
 }
