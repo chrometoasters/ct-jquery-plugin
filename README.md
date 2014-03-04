@@ -1,4 +1,4 @@
-# Boilerplate - jQuery Plugin
+# jQuery: Plugin template
 
 A best-practice template for developing jQuery plugins.
 
