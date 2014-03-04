@@ -2,6 +2,8 @@
 
 A best-practice template for developing jQuery plugins.
 
+__Please note: this plugin is optimised for internal Chrometoaster use. YMMV.__
+
 ## Installation
 
     bower install https://github.com/chrometoasters/frontend-boilerplate-jquery-plugin.git
