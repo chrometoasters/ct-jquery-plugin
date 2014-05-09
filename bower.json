@@ -1,5 +1,5 @@
 {
-    "name": "frontend-boilerplate-jquery-plugin",
+    "name": "ct-jquery-plugin",
     "description": "A best-practice jQuery Plugin template",
     "version": "1.0.0",
     "main": "dist",
@@ -12,10 +12,10 @@
             "email": "dan.smith@chrometoaster.com"
         }
     ],
-    "homepage": "http://github.com/chrometoasters/frontend-boilerplate-jquery-plugin",
+    "homepage": "http://github.com/chrometoasters/ct-jquery-plugin",
     "repository": {
         "type": "github",
-        "url": "https://github.com/chrometoasters/frontend-boilerplate-jquery-plugin/tree/master"
+        "url": "http://github.com/chrometoasters/ct-jquery-plugin.git"
     },
     "dependencies": {
         "jquery": "latest"
