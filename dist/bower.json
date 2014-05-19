@@ -1,15 +1,15 @@
 {
-    "name": "ct-jquery-plugin",
-    "description": "A best-practice jQuery Plugin template",
-    "version": "1.1.0",
+    "name": "ct-jquery-PLUGIN_NAME",
+    "description": "PLUGIN_DESCRIPTION",
+    "version": "0.0.1",
     "main": "dist",
     "license": "All rights reserved",
     "ignore": [],
     "keywords": [],
     "authors": [
         {
-            "name": "Dan Smith",
-            "email": "dan.smith@chrometoaster.com"
+            "name": "FIRSTNAME LASTNAME",
+            "email": "EMAIL"
         }
     ],
     "homepage": "http://github.com/chrometoasters/ct-jquery-plugin",

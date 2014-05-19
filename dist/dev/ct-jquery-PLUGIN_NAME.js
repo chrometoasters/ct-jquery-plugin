@@ -1,7 +1,7 @@
 /*
- * File name: jquery.PLUGIN_NAME.js
+ * File name: ct-jquery-PLUGIN_NAME.js
  * Plugin name: PLUGIN_NAME
- * Project name: PROJECT_NAME (YYYY)
+ * Project name: PROJECT_NAME (PROJECT_YEAR)
  *
  * Summary:
  * Markup:
@@ -56,6 +56,26 @@
             // called with $(el).PLUGIN_NAME()
             init : function( options ) {
 
+                // Dependencies
+                //if ( typeof $.OTHER_PLUGIN_NAME === undefined ) {
+                //    return;
+                //}
+
+                // Create settings, regardless of whether they were already set
+                var defaults = {
+                    // property: value // description
+                };
+
+                var settings = $.extend({}, defaults, options);
+
+                // Requirements
+                //if ( settings.PROPERTY === '' ) {
+                //    return;
+                //}
+
+                // Create any dynamic properties
+                // settings.OTHER_PROPERTY = 'STRING_' + settings.PROPERTY;
+
                 // MAINTAIN CHAINABILITY by returning 'this'
                 // Within the function called by 'each()', the individual element being processed
                 // can be referenced in the local scope by 'this' and used as a jQuery object by '$(this)'
@@ -85,36 +105,43 @@
                     // 1.  $context.data('PLUGIN_NAME').EXISTING_PROPERTY_NAME
                     // 2a. $context.data('PLUGIN_NAME').EXISTING_PROPERTY_SET;
                     // 2b. $context.data('PLUGIN_NAME').EXISTING_PROPERTY_SET.EXISTING_PROPERTY_NAME;
-                    var settings = $this.data('PLUGIN_NAME');
 
-                    // If we could't grab settings, create them from defaults and passed options
-                    if ( typeof(settings) === 'undefined') {
-
-                        var defaults = {
-                            //propertyName: 'value',
-                            //onSomeEvent: function() {}
-                        };
-
-                        settings = $.extend({}, defaults, options);
-
-                        // Save our newly created settings
-                        $this.data('PLUGIN_NAME', settings);
-
-                    } else {
-
-                        // We got settings, merge our passed options in with them (optional)
-                        settings = $.extend({}, settings, options);
-
-                        // If you wish to save options passed each time, add:
-                        // $this.data('pluginName', settings);
-                    }
+                    // Save our newly created settings with each element
+                    $this.data('PLUGIN_NAME', settings);
 
                     // RUN CODE HERE
                     // do something to $this
+                    $this.PLUGIN_NAME('_METHOD_NAME');
 
                 });
 
             },
+
+            // Private methods
+
+            _setup: function() {
+
+                var $this = $(this), // module
+                    data = $this.data('PLUGIN_NAME');
+
+                $this.PLUGIN_NAME('_METHOD_NAME');
+            },
+
+            // called by $(el).PLUGIN_NAME('_METHOD_NAME') or $(el).PLUGIN_NAME('_METHOD_NAME', ARGUMENTS);
+            //_METHOD_NAME: function(ARGUMENTS) {
+                // do something
+            //}
+
+            // ADDERS
+            // ...
+
+            // SETTERS AND UNSETTERS
+            // ...
+
+            // GETTERS
+            // ...
+
+            // Public methods
 
             // CLEANING UP
             destroy: function() {
@@ -122,35 +149,24 @@
                 return this.each( function() {
 
                     // Create a jQuery object to use with this individual element
-                    var $this = $(this);
+                    var $this = $(this), // module
+                        data = $this.data('PLUGIN_NAME');
+
+                    // Revert HTML
+                    if ( data && data.PROPERTY ) {
+                        $this.state('_METHOD_NAME');
+                    }
 
                     // Unbind namespaced events
                     $(SOME_ELEMENT).unbind('.PLUGIN_NAME');
 
                     // Remove data when deallocating our plugin
-                    var data = $this.data('PLUGIN_NAME');
-                    data.PLUGIN_NAME.remove();
                     $this.removeData('PLUGIN_NAME');
 
                 });
-
-            },
-
-            // called by $(el).PLUGIN_NAME('_METHOD_NAME') or $(el).PLUGIN_NAME('_METHOD_NAME', ARGUMENTS);
-            _METHOD_NAME: function(ARGUMENTS) {
-
-                // do something
-
-            } // END METHOD
+            }
 
         }; // end methods
-
-        // Add a new private function
-        function PLUGIN_NAME_2() {
-
-            // do something
-
-        }
 
         // Add a new (public) function property named 'PLUGIN_NAME' to the jQuery.fn object:
         // $.fn.PLUGIN_NAME = function(){ .. }
