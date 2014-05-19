@@ -1,6 +1,6 @@
 # ct-jquery-plugin
 
-A best-practice template for developing Github hosted jQuery plugins, which can be consumer via Bower.
+A best-practice template for developing Github hosted jQuery plugins, which can be consumed via Bower.
 
 __Please note: this plugin is optimised for internal Chrometoaster use. YMMV.__
 
