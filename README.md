@@ -19,7 +19,7 @@ Note: if you wish to customise where Bower puts installed components, you may ad
 
 ### Customisation
 
-1. Decide on a plugin name, considering the function or utility that the plugin will provide.
+1. Decide on a plugin name, considering the function or utility that the plugin will provide. camelCase is best, as dashes can't be used in JavaScript variable/function names
 1. Do a case sensitive Find and Replace on all files in `ct-jquery-plugin/dist`:
     1. Replace `PLUGIN_NAME` with your (lowercase) plugin name
     1. Replace `PLUGIN_DESCRIPTION` with a one line description of the plugin
