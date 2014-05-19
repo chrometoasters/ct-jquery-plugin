@@ -110,8 +110,8 @@
                     $this.data('PLUGIN_NAME', settings);
 
                     // RUN CODE HERE
-                    // do something to $this
-                    $this.PLUGIN_NAME('_METHOD_NAME');
+                    // set up $this
+                    $this.PLUGIN_NAME('_setup');
 
                 });
 
