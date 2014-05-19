@@ -28,6 +28,8 @@ Note: if you wish to customise where Bower puts installed components, you may ad
     1. Replace `EMAIL` with your email address
     1. Replace `FIRSTNAME` with your first name
     1. Replace `LASTNAME` with your last name
+1. Save all files
+1. Rename any files that use `PLUGIN_NAME` in the file nane
 
 ### Dependencies
 
