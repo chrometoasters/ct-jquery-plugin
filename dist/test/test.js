@@ -19,9 +19,6 @@ QUnit.begin( function() {
     testvars.id = 'TOOD';
     testvars.target = '#TODO';
 
-    // TODO
-    // Add test for focus (working in demo)
-
 });
 
 /*
