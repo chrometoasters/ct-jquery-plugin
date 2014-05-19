@@ -12,10 +12,10 @@
             "email": "EMAIL"
         }
     ],
-    "homepage": "http://github.com/chrometoasters/ct-jquery-plugin",
+    "homepage": "http://github.com/chrometoasters/ct-jquery-PLUGIN_NAME",
     "repository": {
         "type": "github",
-        "url": "http://github.com/chrometoasters/ct-jquery-plugin.git"
+        "url": "http://github.com/chrometoasters/ct-jquery-PLUGIN_NAME.git"
     },
     "dependencies": {
         "jquery": "1.10.1"
