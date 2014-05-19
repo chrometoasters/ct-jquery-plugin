@@ -31,7 +31,7 @@ Note: if you wish to customise where Bower puts installed components, you may ad
 
 ### Dependencies
 
-1. Add any dependencies to the `ct-jquery-plugin/dist/dependencies` object in `ct-jquery-plugin/dist/bower.json`
+1. Add any dependencies to the `dependencies` object in `ct-jquery-plugin/dist/bower.json`
 1. List any dependencies in `ct-jquery-plugin/dist/README.md`
 
 ### Re-use
