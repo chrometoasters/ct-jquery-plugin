@@ -154,7 +154,7 @@
 
                     // Revert HTML
                     if ( data && data.PROPERTY ) {
-                        $this.state('_METHOD_NAME');
+                        $this.PLUGIN_NAME('_METHOD_NAME');
                     }
 
                     // Unbind namespaced events
