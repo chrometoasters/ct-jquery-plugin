@@ -48,7 +48,7 @@ Note: if you wish to customise where Bower puts installed components, you may ad
 1. Navigate to <https://github.com/chrometoasters/ct-jquery-PLUGIN_NAME>
 1. Click 'Clone in Desktop'
 1. Save the repo to your local machine
-1. Copy the contents of `ct-jquery-plugin/dist` into your local repository folder, replacing the `README.md` that is in there
+1. Copy the contents of `ct-jquery-plugin/dist` (from the Customisation step, above) into your local repository folder, replacing the `README.md` that is in there
 1. Navigate to this folder
 1. `bower install` (`bower_components` is excluded from the commit via the included `.gitignore` file)
 1. Commit your code to Github
