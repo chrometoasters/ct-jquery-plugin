@@ -29,12 +29,12 @@ Prerequisites
 
 module("Prerequisites");
 
-test("OTHER_PLUGIN_NAME.js", function() {
+test("jQuery", function() {
 
     "use strict";
 
     equal(
-        typeof $.fn.OTHER_PLUGIN_NAME === 'undefined', // or OTHER_PLUGIN_NAME.METHOD
+        typeof jQuery === 'undefined', // or $.fn.OTHER_PLUGIN_NAME.METHOD or OTHER_PLUGIN_NAME.METHOD
         false,
         'loaded'
     );
