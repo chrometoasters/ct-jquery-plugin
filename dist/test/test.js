@@ -29,6 +29,16 @@ Prerequisites
 
 module("Prerequisites");
 
+test("OTHER_PLUGIN_NAME.js", function() {
+
+    "use strict";
+
+    equal(
+        typeof $.fn.OTHER_PLUGIN_NAME === 'undefined', // or OTHER_PLUGIN_NAME.METHOD
+        false,
+        'loaded'
+    );
+});
 
 /*
 -------------------------------------------------------------------
